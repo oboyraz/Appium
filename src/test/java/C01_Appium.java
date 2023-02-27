@@ -19,7 +19,7 @@ public class C01_Appium {
         desiredCapabilities.setCapability("platformVersion","11.0");
         desiredCapabilities.setCapability("deviceName","PIXEL");
         desiredCapabilities.setCapability("automationName","UIAutomator2");
-        desiredCapabilities.setCapability("app","C:\\Users\\AIVISIONTECH\\IdeaProjects\\Appium\\src\\Apps\\Calculator.apk");
+        desiredCapabilities.setCapability("app","/home/isuzuotonom/Desktop/javaProjects/Automated-App-Testing-Using-Appium-With-TestNG/src/Apps/Calculator.apk");
         AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("http:localhost:4723/wd/hub"),desiredCapabilities);
 
         driver.findElement(By.id("com.google.android.calculator:id/digit_9")).click();
@@ -35,10 +35,5 @@ public class C01_Appium {
         System.out.println("expected: " + expectedResult);
         System.out.println("actual: " + actualResult);
         Assert.assertEquals(actualResult,expectedResult);
-
-
-
-
-
     }
 }

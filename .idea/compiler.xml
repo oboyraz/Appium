@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Appium" />
+        <module name="Automated-App-Testing-Using-Appium-With-TestNG" />
       </profile>
     </annotationProcessing>
   </component>
